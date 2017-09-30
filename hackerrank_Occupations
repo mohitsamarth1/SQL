@@ -18,5 +18,5 @@ FROM
     WHEN 'Professor' THEN @p:=@p+1
     WHEN 'Singer' THEN @s:=@s+1
  END
-AS idn FROM OCCUPATIONS ORDER BY NAME )
-AS temp GROUP BY temp.idn;
+AS sample FROM OCCUPATIONS ORDER BY NAME )
+AS temp GROUP BY temp.sample;
